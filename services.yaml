@@ -1,0 +1,6 @@
+services:
+    demo.service:
+        class:     \Services\DemoService
+    dependent.service:
+        class:     \Services\DependentService
+        arguments: ["@demo.service"]
